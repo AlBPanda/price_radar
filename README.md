@@ -1,15 +1,15 @@
 # price-radar
 
-Lightweight, dependency-free Python tool to track product prices, record history in SQLite, and trigger alerts when prices drop.
+Ürün fiyatlarını takip eden, fiyat geçmişini SQLite veritabanında saklayan ve fiyat düştüğünde bildirim gönderen hafif, harici bağımlılıksız Python aracı.
 
-## Features (Planned & In Progress)
-- Zero external dependencies (uses standard library `urllib`, `sqlite3`, `unittest`).
-- SQLite storage for price tracking history.
-- Simple CLI interface for adding, removing, and inspecting tracked products.
-- Pluggable alert dispatcher (webhooks, terminal alerts, logs).
-- HTML/JSON price parsers for common store formats.
+## Özellikler (Planlanan & Geliştirilmekte Olan)
+- Sıfır harici bağımlılık (saf Python standart kütüphanesi: `urllib`, `sqlite3`, `unittest`).
+- Fiyat geçmişini yerel SQLite veritabanında saklama.
+- Takip edilen ürünleri eklemek, listelemek ve kontrol etmek için sade CLI arayüzü.
+- Modüler bildirim yapısı (terminal uyarıları, loglar, webhook bildirimleri).
+- Farklı e-ticaret siteleri için metin ve HTML fiyat ayrıştırıcıları.
 
-## Quick Start
+## Hızlı Başlangıç
 ```bash
 python -m unittest discover tests
 python -m src.cli --help

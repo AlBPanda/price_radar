@@ -1,4 +1,4 @@
-"""Core domain models for tracking products and price observations."""
+"""Ürün ve fiyat geçmişini tutan temel veri modelleri."""
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Optional
@@ -6,6 +6,7 @@ from typing import Optional
 
 @dataclass(frozen=True)
 class Product:
+    """Takip edilen ürünü temsil eder."""
     id: Optional[int]
     name: str
     url: str
@@ -15,6 +16,7 @@ class Product:
 
 @dataclass(frozen=True)
 class PriceSnapshot:
+    """Belirli bir andaki fiyat ve stok bilgisini tutar."""
     id: Optional[int]
     product_id: int
     price: float
@@ -25,6 +27,7 @@ class PriceSnapshot:
 
 @dataclass(frozen=True)
 class AlertRule:
+    """Ürün için belirlenen bildirim/alarm kuralı."""
     id: Optional[int]
     product_id: int
     threshold_price: float

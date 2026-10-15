@@ -3,7 +3,7 @@
 Her gün sıradaki bekleyen madde birim testleriyle birlikte geliştirilip commit atılır.
 
 - [x] Temel veri modelleri: `Product`, `PriceSnapshot`, `AlertRule` (`src/models.py`)
-- [ ] Veritabanı katmanı: SQLite tablo oluşturma ve bağlantı yöneticisi (`src/db.py`)
+- [x] Veritabanı katmanı: SQLite tablo oluşturma ve bağlantı yöneticisi (`src/db.py`)
 - [ ] Veri erişim katmanı (Repository): Ürün ekleme ve fiyat geçmişi sorgulama (`src/repository.py`)
 - [ ] Fiyat ayrıştırıcı (Parser): Fiyat metinlerinden sayısal değerleri çıkarma (`src/parser.py`)
 - [ ] HTTP istek modülü: Özel User-Agent ve zaman aşımı destekli hafif `urllib` istemcisi (`src/fetcher.py`)

@@ -2,7 +2,7 @@
 
 Each day, the next pending item is implemented with test coverage and committed.
 
-- [ ] Core data models: `Product`, `PriceSnapshot`, `AlertRule` (`src/models.py`)
+- [x] Core data models: `Product`, `PriceSnapshot`, `AlertRule` (`src/models.py`)
 - [ ] Database layer: SQLite schema creation and connection manager (`src/db.py`)
 - [ ] Database repository: Insert product and query price history (`src/repository.py`)
 - [ ] Simple HTML/text price parser: Regex & string extraction for price figures (`src/parser.py`)
